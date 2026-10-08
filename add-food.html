@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Surplus Food - AnnaSetu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍲 AnnaSetu
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="donor-dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="add-food.html">Add Food</a>
+            </li>
+
+            <li>
+                <a href="my-donations.html">My Donations</a>
+            </li>
+
+            <li>
+                <a href="index.html">Logout</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Add Food Section -->
+
+    <section class="food-form-section">
+
+        <div class="food-form-box">
+
+            <h1>🍱 Donate Surplus Food</h1>
+
+            <p>
+                Enter the details of the extra food available.
+            </p>
+
+
+            <form id="foodForm">
+
+                <!-- Food Name -->
+
+                <label for="foodName">
+                    Food Name
+                </label>
+
+                <input
+                    type="text"
+                    id="foodName"
+                    placeholder="Example: Rice and Dal"
+                    required
+                >
+
+
+                <!-- Quantity -->
+
+                <label for="quantity">
+                    Number of Meals
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Example: 50"
+                    min="1"
+                    required
+                >
+
+
+                <!-- Location -->
+
+                <label for="location">
+                    Pickup Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: ABC Restaurant, Pune"
+                    required
+                >
+
+
+                <!-- Expiry -->
+
+                <label for="expiry">
+                    Food Available Until
+                </label>
+
+                <input
+                    type="datetime-local"
+                    id="expiry"
+                    required
+                >
+
+
+                <!-- Description -->
+
+                <label for="description">
+                    Food Description
+                </label>
+
+                <textarea
+                    id="description"
+                    rows="4"
+                    placeholder="Example: Fresh vegetarian food"
+                    required
+                ></textarea>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    📤 Post Food Donation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 AnnaSetu | SDG 2 - Zero Hunger
+        </p>
+
+    </footer>
+
+
+    <script src="js/food.js"></script>
+
+</body>
+
+</html>
